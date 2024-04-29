@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    z-index: 1;
+    position: sticky;
+    left: 0;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+    padding: 20px 0;
+    color: white;
+    
+}
+
+nav > .name > h3 {
+    font-family: 'Silkscreen', cursive;
+}
+
+nav > ul {
+    display: flex;
+    list-style-type: none;
+    width: 40%;
+    justify-content: space-around;
+    padding-top: 5px;
+}
+
+nav > ul > li > a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease 0s
+}
+
+nav > ul > li > a:hover {
+    color: aqua;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -6px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+    
+}
+
+.menu-toggle span {
+    display: block;
+    width:  28px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+/* hamburger responsive */
+
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+
+}
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+    background-color: orangered;
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+    background-color: orangered;
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+.menu-toggle input:checked ~ span:nth-child(3) {
+    transform: scale(0);
+}
+
+
+
+/* end navbar  */
+
+:root {
+    --gradient: linear-gradient( 109.6deg,  rgba(61,245,167,1) 11.2%, rgba(9,111,224,1) 91.1% );;
+}
+.container {
+    min-height: 89vh;
+    background-color: aliceblue;
+    background-image: var(--gradient);
+    background-size: 200%;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    animation: background-animation 3s infinite alternate;
+}
+
+@keyframes background-animation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+
+
+.lnspacing {
+    line-height: 30px;
+}
+
+.image1 {
+    width: 500px;
+    height: 503px;
+}
+
+.pd {
+    padding-bottom: 10px;
+    color: black;
+}
+
+.mybutton {
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    background-image: linear-gradient( 109.6deg,  rgba(61,245,167,1) 11.2%, rgba(9,111,224,1) 91.1% );;
+    border: solid black 1px;
+    font-weight: 600;
+    transition: all 0.3s ease 0s
+}
+
+.mybutton:hover {
+    transform: translateY(-3px);
+}
+
+/*  */
+.skills{
+    text-align: center;
+    padding-top: 20px;
+}
+.head {
+    font-family: 'Silkscreen',cursive ;
+    text-align: center;
+}
+.icons {
+    padding: 80px 40px;
+    
+}
+
+
+.icon {
+    width: 150px;
+}
+
+.head2 {
+    text-align: center;
+    font-family: 'Silkscreen', cursive ;
+    padding-top: 30px ;
+}
+
+.warp-services {
+    background-size: 200%;
+    background-image: var(--gradient);
+    animation: background-animation 3s infinite alternate;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 6px;
+    padding: 40px 40px;
+    
+
+}
+
+.service {
+    text-align: center;
+    color: white;
+    border-radius: 4px;
+    border: 2px solid black;
+    background-color: black;
+    padding: 10px;
+}
+
+
+.portfolio {
+    width: 100%;
+    padding: 0 20px;
+
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+  
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.wrapportfo {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+    padding: 40px 0;
+}
+.buttoncard {
+    width: 150px;
+    padding: 5px;
+    background-color: dodgerblue;
+    border-radius: 4px;
+    font-weight: bold;
+    border: 1px solid white;
+    transition: all 0.3s ease 0s
+}
+
+.buttoncard:hover {
+    transform: translateY(-3px);
+}
+
+.contactme {
+    padding: 40px 80px;
+    background-image: var(--gradient);
+    background-size: 200%;
+    animation: background-animation 3s infinite alternate;
+}
+
+.head3 {
+    padding-bottom: 30px;
+    text-align: center;
+    font-family: 'Silkscreen', cursive ;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: dodgerblue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: rgb(43, 139, 235);
+  }
+  
+.container3 {
+    border-radius: 5px;
+    background-color: black;
+    padding: 20px;
+    color: white;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 60px;  
+    background: rgb(66, 63, 63);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.head4 {
+    font-family: 'Silkscreen', cursive  ;
+    color: white;
+
+}
+
+footer > p {
+    color: white;
+    
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        width: 50%;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .portfolio {
+        width: 100%;
+        padding: 0 ;
+    }
+
+    .wrapportfo {
+        width: 100%;
+        justify-items: center;
+        align-items: center;
+    }
+    .card {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .menu-toggle{
+        display: flex;
+    }
+    nav ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 80%;
+        height: 100vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+        z-index: -1;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+    
+    nav ul.slide {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .contactme {
+        padding: 40px 20px;
+        background-image: var(--gradient);
+        background-size: 200%;
+        animation: background-animation 3s infinite alternate;
+    }
+    .container {
+        min-height: 100vh;
+    }
+    .intro {
+        margin-top: 40px;
+    }
+    
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Silkscreen&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="name">
+                <h3>Muhammad Zahran</h4>
+            </div>
+
+            <ul>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="">Contact Me</a></li>
+            </ul>
+
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <div class="container">
+            <div class="intro">
+                <h2 class="">Hai Nama Saya</h2>
+                <h1 class="">Muhammad Zahran Alfarizi</h1>
+                <h3 class="lnspacing">Saya Seorang Frontend Web Developer</h3>
+                <p class="pd">Membuat Tampilan Website adalah hobby saya yang saya mulai tekuni dari tahun 2022 selain membuat tampilan website saya suka mempelajari hal-hal baru khusus nya dibidang web develover</p>
+                <button class="mybutton">Download My CV</button>
+            </div>
+            <div class="heroimage">
+                <img src="./src/zahranpoto.png" alt="" class="image1">
+            </div>
+        </div>
+        <div class="skills" id="skills">
+            <h1 class="head">Skills</h1>
+            <div class="icons">
+                <div class="wrap">
+                <img src="./src/html (1).png" alt="" class="icon">
+                <img src="./src/css3.png" alt="" class="icon">
+                <img src="./src/java-script.png" alt="" class="icon">
+                <img src="./src/react.png" alt="" class="icon">
+                <img src="./src/bootstrap.png" alt="" class="icon">
+                <img src="./src/tailwind-css.png" alt="" class="icon">
+                </div>
+            </div>
+        </div>
+
+        <section class="warp-services" id="services">
+        <h1 class="head2">Services</h1>
+            <div class="services">
+                <div class="service">
+                    <h3 class="head">Frontend Web Development</h3>
+                    <p>Mampu Membuat Website berdasarkan keinginan client atau berdasarkan project plan yang sudah dibuat, serta memakai teknologi yang sering digunakan oleh banyak perusahan seperti ReactJs</p>
+                </div>
+                <div class="service">
+                    <h3 class="head">Web Design</h3>
+                    <p>Mendesain Web agar tampil menarik berdasarkan keinginan client ataupun berdasarkan sketch yang sudah disiapkan oleh client</p>
+                </div>
+                <div class="service">
+                    <h3 class="head">Tutorial</h3>
+                    <p>Dapat Memberikan Tutorial tentang materi Frontend Web Developer seperti materi Html, Css, Javascript, boostrap. Sekaligus mensharing hal2 yang saya telah pelajari secara otodidak khusus nya tentang Frontend Web Developer</p>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio" id="portfolio">
+            <h1 class="head2">My Portfolio</h1>
+            <div class="wrapportfo">
+                <div class="card">
+                    <img src="/src/Screenshot 2022-10-11 184153.png" alt="Avatar" style="width:100%">
+                    <div class="container2">
+                      <h4><b>Web Jujutsu</b></h4> 
+                      <p class="pd">Web yang sudah menerapkan sistem grid pada websitenya, tujuan dibuat nya web ini adalah sebagai info tentang grup pertemanan di daerah rumah saya</p> 
+                      <button class="buttoncard">Click Me</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/src/Screenshot 2022-10-10 090445.png" alt="Avatar" style="width:100%">
+                    <div class="container2">
+                      <h4><b>Web Pencarian Film</b></h4> 
+                      <p class="pd">Web ini berfungsi mencari film yang diinginkan dengan mengunakan API omdb dan menggunakan teknik fetch pada javascript, banyak penggunaan EcmaScript 6, dan juga menggunakan boostrap4 </p> 
+                      <button class="buttoncard">Click Me</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/src/Screenshot 2022-10-11 183206.png" alt="Avatar" style="width:100%">
+                    <div class="container2">
+                      <h4><b>Web Todo List Sederhana</b></h4> 
+                      <p class="pd">Web yang saya buat hasil dari pembelajaran javascript, befungsi sebagai todo list sederhana, selain itu web tersebut sudah menerapkan beberap fungsi dari ES6</p> 
+                      <button class="buttoncard">Click Me</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contactme">
+            <h1 class="head3">Contact Me</h1>
+            <div class="container3">
+                <form action="/action_page.php">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              
+                  <label for="country">Country</label>
+                  
+              
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+              
+        </section>
+
+
+    </main>
+    <footer>
+       <h1 class="head4">Muhammad Zahran</h1>
+       <p>Copyright &copy; 2022 </p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
